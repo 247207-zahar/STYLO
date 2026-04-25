@@ -797,4 +797,119 @@ img {
 .footer-bottom {
     border-color: rgba(255,255,255,0.08) !important;
 }
- 
+
+@media (max-width: 575.98px) {
+
+    .hero-section {
+        padding: 50px 0 40px;
+        text-align: center;
+    }
+
+    .hero-subtext {
+        margin: 1rem auto 0;
+    }
+
+    .hero-text-col .d-flex {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-image-col {
+        margin-top: 44px;
+    }
+
+    .hero-product-wrapper {
+        width: 100%;
+    }
+
+    .hero-bg-circle {
+        width: 260px;
+        height: 260px;
+    }
+
+    .float-badge--1 {
+        left: 0;
+    }
+
+    .float-badge--2 {
+        right: 0;
+    }
+
+    .reviews-heading {
+        text-align: center;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-section .d-flex {
+        justify-content: center;
+    }
+
+    .about-image-wrapper {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .feature-card {
+        text-align: center;
+    }
+
+    .info-card {
+        padding: 28px 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+    }
+}
+
+/* =============================================
+   RESPONSIVE – TABLET (576px – 991px)
+   ============================================= */
+@media (min-width: 576px) and (max-width: 991.98px) {
+
+    .hero-section {
+        padding: 60px 0 50px;
+    }
+
+    .hero-product-wrapper {
+        width: 340px;
+    }
+
+    .hero-bg-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .feature-card {
+        padding: 20px 16px;
+    }
+}
+
+/* =============================================
+   RESPONSIVE – DESKTOP (1200px+)
+   ============================================= */
+@media (min-width: 1200px) {
+    .hero-heading {
+        font-size: 3.4rem;
+    }
+
+    .hero-product-wrapper {
+        width: 440px;
+    }
+} 
