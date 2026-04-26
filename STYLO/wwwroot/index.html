@@ -3,527 +3,836 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stylo – Girls Sandals & Footwear</title>
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  
+    <title>StepStyle – Walk in Style</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+          rel="stylesheet" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
+    <!-- ========== TOP ANNOUNCEMENT BAR ========== -->
+    <div class="announcement-bar text-center py-2">
+        <p class="mb-0">
+            <i class="bi bi-truck me-2"></i>
+            Free Delivery on Orders Above Rs. 3,000 &nbsp;|&nbsp;
+            <i class="bi bi-percent me-2"></i>
+            Up to 50% OFF on Summer Collection
+        </p>
+    </div>
 
-    <header class="site-header">
-        <nav class="navbar navbar-expand-lg py-3">
+    <!-- ========== HEADER / NAVBAR START ========== -->
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand logo-text" href="#">Stylo</a>
 
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#mainNav"
-                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <span class="brand-icon me-2"><i class="bi bi-bootstrap-reboot"></i></span>
+                    <span class="brand-name">StepStyle</span>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-controls="mainNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
                 </button>
 
+                <!-- Nav Links -->
                 <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
-                        <li class="nav-item"><a class="nav-link nav-pill active" href="#">Woboys</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Men</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">Collections</a>
-                            <ul class="dropdown-boysu">
-                                <li><a class="dropdown-item" href="#">Summer 2025</a></li>
-                                <li><a class="dropdown-item" href="#">Leather Classics</a></li>
-                                <li><a class="dropdown-item" href="#">Beach Essentials</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Men</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sandals</a></li>
+                                <li><a class="dropdown-item" href="#">Formal Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                                <li><a class="dropdown-item" href="#">Loafers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Women</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Heels</a></li>
+                                <li><a class="dropdown-item" href="#">Flats</a></li>
+                                <li><a class="dropdown-item" href="#">Sandals</a></li>
+                                <li><a class="dropdown-item" href="#">Wedges</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Boys</a></li>
+                                <li><a class="dropdown-item" href="#">Girls</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Collections</a></li>
                     </ul>
-                    <div class="d-flex align-items-center gap-3">
-                        <a href="#" class="nav-icon" aria-label="Search">&#128269;</a>
-                        <a href="#" class="nav-icon" aria-label="Cart">&#128717;</a>
-                        <a href="#" class="btn btn-certo-primary rounded-pill px-4">Shop Now</a>
+
+                    <!-- Nav Icons -->
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <a href="#" class="nav-icon" title="Search"><i class="bi bi-search"></i></a>
+                        <a href="#" class="nav-icon" title="Wishlist"><i class="bi bi-heart"></i></a>
+                        <a href="#" class="nav-icon position-relative" title="Cart">
+                            <i class="bi bi-bag"></i>
+                            <span class="cart-badge">3</span>
+                        </a>
+                        <a href="#" class="nav-icon" title="Account"><i class="bi bi-person"></i></a>
                     </div>
                 </div>
+
             </div>
         </nav>
     </header>
+    <!-- ========== HEADER / NAVBAR END ========== -->
 
 
     <main>
 
- 
+        <!-- ========== HERO SECTION START ========== -->
         <section class="hero-section">
-            <div class="container">
-                <div class="row align-items-center">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
 
- 
-                    <div class="col-lg-6 col-md-7 hero-text-col">
-                        <span class="hero-badge">New Girls Collection 2025</span>
-                        <h1 class="hero-heading">Step into glamour,<br>made for girls</h1>
-                        <p class="hero-subtext">
-                            Trendy sandals designed for girls who love to shine. From school
-                            runs to weekend hangouts — Stylo keeps you stylish, all day long.
-                        </p>
-                        <div class="d-flex flex-wrap gap-3 mt-4">
-                            <a href="#" class="btn btn-certo-primary rounded-pill">Shop Girls' →</a>
-                            <a href="#" class="btn btn-certo-outline rounded-pill">Shop Boys' →</a>
-                        </div>
-                        <div class="hero-stats d-flex gap-4 mt-5">
-                            <div class="stat-item">
-                                <span class="stat-number">50K+</span>
-                                <span class="stat-label">Happy Customers</span>
-                            </div>
-                            <div class="stat-divider"></div>
-                            <div class="stat-item">
-                                <span class="stat-number">4.9★</span>
-                                <span class="stat-label">Average Rating</span>
-                            </div>
-                            <div class="stat-divider"></div>
-                            <div class="stat-item">
-                                <span class="stat-number">120+</span>
-                                <span class="stat-label">Styles Available</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-5 hero-image-col d-flex justify-content-center">
-                        <div class="hero-product-wrapper">
-                            <div class="hero-bg-circle"></div>
-                            <div class="hero-sandal-display">
-                                <div class="sandal-svg-wrap">
- 
-                                    <svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" class="sandal-hero-svg">
-
-                                        <ellipse cx="160" cy="220" rx="110" ry="14" fill="rgba(0,0,0,0.12)" />
-       
-                                        <path d="M60 160 Q80 185 160 188 Q240 185 260 160 Q265 140 255 125 Q245 110 230 108 L90 108 Q75 110 65 125 Q55 140 60 160Z"
-                                              fill="#C8A882" stroke="#A0845C" stroke-width="2" />
- 
-                                        <path d="M70 155 Q85 175 160 178 Q235 175 250 155 Q255 138 247 126 Q238 114 225 112 L95 112 Q82 114 73 126 Q65 138 70 155Z"
-                                              fill="#E8D5B7" />
-
-                                        <ellipse cx="160" cy="140" rx="90" ry="30" fill="#F5EBD8" />
-   
-                                        <path d="M150 115 Q155 100 160 95 Q165 100 170 115" fill="none" stroke="#8B6340" stroke-width="8" stroke-linecap="round" />
-
-                                        <path d="M90 120 Q95 105 110 98 Q125 93 140 97 Q155 101 160 95"
-                                              fill="none" stroke="#8B6340" stroke-width="7" stroke-linecap="round" />
- 
-                                        <path d="M230 120 Q225 105 210 98 Q195 93 180 97 Q165 101 160 95"
-                                              fill="none" stroke="#8B6340" stroke-width="7" stroke-linecap="round" />
-                      
-                                        <rect x="105" y="95" width="14" height="9" rx="2" fill="#C4924A" />
-                                        <line x1="112" y1="95" x2="112" y2="104" stroke="#8B6340" stroke-width="1.5" />
-                                       
-                                        <rect x="181" y="95" width="14" height="9" rx="2" fill="#C4924A" />
-                                        <line x1="188" y1="95" x2="188" y2="104" stroke="#8B6340" stroke-width="1.5" />
-                                     
-                                        <path d="M85 148 Q160 156 235 148" fill="none" stroke="#D4B896" stroke-width="1.5" stroke-dasharray="5,4" />
-                                    </svg>
-                                </div>
-                                <div class="hero-price-tag">
-                                    <span class="price-label">From</span>
-                                    <span class="price-value">$49</span>
+                    <!-- Main Hero Banner -->
+                    <div class="col-lg-8 col-12">
+                        <div class="hero-main position-relative overflow-hidden">
+                            <img src="assets/images/1.webp"
+                                 alt="Summer Sandal Collection"
+                                 class="hero-img w-100" />
+                            <div class="hero-overlay">
+                                <div class="hero-content">
+                                    <span class="hero-tag">New Arrival 2025</span>
+                                    <h1 class="hero-title">Walk Into<br /><em>Summer</em></h1>
+                                    <p class="hero-subtitle">Discover the finest sandal collection crafted for comfort &amp; style</p>
+                                    <div class="hero-btns d-flex gap-3 flex-wrap">
+                                        <a href="#products" class="btn btn-primary-custom">Shop Now</a>
+                                        <a href="#collections" class="btn btn-outline-custom">Explore All</a>
+                                    </div>
                                 </div>
                             </div>
-                        
-                            <div class="float-badge float-badge--1">Free Shipping</div>
-                            <div class="float-badge float-badge--2">Handcrafted</div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-    
-        <section class="reviews-section py-5">
-            <div class="container">
-                <h2 class="reviews-heading mb-4">
-                    Loved by thousands of girls<br class="d-none d-md-block"> and boys across the globe
-                </h2>
-
-                <div class="row g-3">
-
-            
-                    <div class="col-lg-3 col-md-6">
-                        <div class="review-card h-100">
-                            <div class="stars mb-2">★★★★★</div>
-                            <p class="review-text">
-                                I've been wearing these sandals every day this summer. The leather is buttery soft
-                                and they've moulded perfectly to my feet. Best purchase I've made all year!
-                            </p>
-                            <p class="reviewer-name">jessica_m</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="review-card h-100">
-                            <div class="stars mb-2">★★★★★</div>
-                            <p class="review-text">
-                                Ordered two pairs — one for the beach and one for walking around the city.
-                                Both are incredibly comfortable. The quality is far beyond the price point.
-                            </p>
-                            <p class="reviewer-name">travel_with_tom</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="review-card h-100">
-                            <div class="stars mb-2">★★★★★</div>
-                            <p class="review-text">
-                                These are the most comfortable sandals I've ever worn. My feet don't hurt
-                                even after walking 20,000 steps. Absolutely recomboysd to everyone!
-                            </p>
-                            <p class="reviewer-name">Sophie Clarke</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <div class="review-card h-100">
-                            <div class="stars mb-2">★★★★★</div>
-                            <p class="review-text">
-                                Delivered super fast and packaged beautifully. The fit is perfect and the
-                                straps are adjustable. I'm already eyeing my next pair in a different colour!
-                            </p>
-                            <p class="reviewer-name">amara_style</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="featured-row mt-5 d-flex flex-wrap align-items-center gap-4">
-                    <span class="featured-label">As seen in:</span>
-                    <span class="featured-logo">Vogue</span>
-                    <span class="featured-logo">Elle</span>
-                    <span class="featured-logo">Harper's Bazaar</span>
-                    <span class="featured-logo">GQ</span>
-                    <span class="featured-logo">Forbes</span>
-                    <span class="featured-logo">InStyle</span>
-                </div>
-            </div>
-        </section>
-  
-        <section class="about-section py-5">
-            <div class="container">
-                <div class="row align-items-center g-5">
-
-                    <div class="col-lg-6">
-                        <h2 class="about-heading">
-                            At Stylo, great footwear<br>
-                            is not a luxury,<br>
-                            it's a necessity.
-                        </h2>
-                        <p class="about-text mt-3">
-                            We believe everyone deserves sandals that feel as good as they look.
-                            Our craftspeople spend years perfecting every stitch, buckle, and sole
-                            so you can walk farther, stand longer, and live more comfortably.
-                        </p>
-                        <div class="d-flex flex-wrap gap-3 mt-4">
-                            <a href="#" class="btn btn-certo-primary rounded-pill">Shop Girls' →</a>
-                            <a href="#" class="btn btn-certo-outline rounded-pill">Shop Boys' →</a>
-                        </div>
-                    </div>
-
-                 
-                    <div class="col-lg-6 d-flex justify-content-center">
-                        <div class="about-image-wrapper">
-                            <div class="about-img-placeholder">
-                                <div class="about-img-inner">
-            
-                                    <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" width="160">
-                                        <ellipse cx="100" cy="138" rx="70" ry="9" fill="rgba(0,0,0,0.1)" />
-                                        <path d="M38 100 Q50 118 100 121 Q150 118 162 100 Q166 87 158 78 Q150 70 140 68 L60 68 Q50 70 42 78 Q34 87 38 100Z" fill="#C8A882" stroke="#A0845C" stroke-width="1.5" />
-                                        <path d="M44 97 Q55 112 100 115 Q145 112 156 97 Q160 86 153 77 Q146 68 137 66 L63 66 Q54 68 47 77 Q40 86 44 97Z" fill="#E8D5B7" />
-                                        <ellipse cx="100" cy="87" rx="57" ry="19" fill="#F5EBD8" />
-                                        <path d="M93 68 Q97 58 100 54 Q103 58 107 68" fill="none" stroke="#8B6340" stroke-width="5" stroke-linecap="round" />
-                                        <path d="M58 72 Q62 60 72 55 Q82 51 90 54 Q97 57 100 54" fill="none" stroke="#8B6340" stroke-width="4.5" stroke-linecap="round" />
-                                        <path d="M142 72 Q138 60 128 55 Q118 51 110 54 Q103 57 100 54" fill="none" stroke="#8B6340" stroke-width="4.5" stroke-linecap="round" />
-                                        <rect x="66" y="51" width="10" height="6" rx="1.5" fill="#C4924A" />
-                                        <rect x="124" y="51" width="10" height="6" rx="1.5" fill="#C4924A" />
-                                        <path d="M50 92 Q100 98 150 92" fill="none" stroke="#D4B896" stroke-width="1" stroke-dasharray="4,3" />
-                                    </svg>
-                                    <p class="about-img-label">Handcrafted with love</p>
+                    <!-- Side Banners -->
+                    <div class="col-lg-4 col-12">
+                        <div class="row g-0 h-100">
+                            <div class="col-12">
+                                <div class="hero-side position-relative overflow-hidden">
+                                    <img src="assets/images/images.jpg"
+                                         alt="Men Collection"
+                                         class="hero-side-img w-100" />
+                                    <div class="hero-side-overlay">
+                                        <span class="side-tag">Men</span>
+                                        <h3>Elegant Footwear</h3>
+                               <a href="#" class="side-link">Shop <i class="bi bi-arrow-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                       
-                            <div class="about-tag about-tag--1">Real Leather</div>
-                            <div class="about-tag about-tag--2">Since 2010</div>
+                            <div class="col-12">
+                                <div class="hero-side position-relative overflow-hidden">
+                                    <img src="assets/images/3.jpg"
+                                         alt="Men Collection"
+                                         class="hero-side-img w-100" />
+                                    <div class="hero-side-overlay">
+                                        <span class="side-tag">Men</span>
+                                        <h3>Fun Footwear</h3>
+                                        <a href="#" class="side-link">Shop <i class="bi bi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <section class="features-section py-5">
-            <div class="container text-center">
-                <h2 class="features-heading mb-2">Step into your best summer,<br>starting right here</h2>
-
-                <div class="row g-4 mt-3">
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">🌿</div>
-                            <h5 class="feature-title">Eco-Friendly Materials</h5>
-                            <p class="feature-desc">
-                                We source sustainable leathers and natural cork to
-                                create footwear that's kind to your feet and the planet.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">🔨</div>
-                            <h5 class="feature-title">Handcrafted Quality</h5>
-                            <p class="feature-desc">
-                                Every pair is hand-stitched by skilled artisans using
-                                time-honoured techniques passed down through generations.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">☁️</div>
-                            <h5 class="feature-title">All-Day Comfort</h5>
-                            <p class="feature-desc">
-                                Memory foam footbeds and ergonomic arch support mean
-                                you can walk all day without a single blister.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">💧</div>
-                            <h5 class="feature-title">Water Resistant</h5>
-                            <p class="feature-desc">
-                                Whether you're at the beach or caught in a surprise
-                                shower, our sandals are built to handle whatever life brings.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">📦</div>
-                            <h5 class="feature-title">Free Returns</h5>
-                            <p class="feature-desc">
-                                Not the right fit? No worries. Enjoy free 30-day
-                                returns — we want you to be 100% happy with every pair.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="feature-card h-100">
-                            <div class="feature-icon">🎨</div>
-                            <h5 class="feature-title">40+ Colours</h5>
-                            <p class="feature-desc">
-                                From classic tan to bold coral — find the perfect
-                                colour to match your personal style this season.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="d-flex justify-content-center flex-wrap gap-3 mt-5">
-                    <a href="#" class="btn btn-certo-primary rounded-pill">Shop Girls' →</a>
-                    <a href="#" class="btn btn-certo-outline rounded-pill">Shop Boys' →</a>
-                </div>
-            </div>
-        </section>
-      
-        <section class="info-cards-section py-5">
+        <!-- ========== HERO SECTION END ========== -->
+        <!-- ========== TRUST BADGES SECTION START ========== -->
+        <section class="trust-section py-4">
             <div class="container">
+                <div class="row g-3 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="trust-item">
+                            <i class="bi bi-truck trust-icon"></i>
+                            <p class="trust-title">Free Delivery</p>
+                            <p class="trust-sub">Orders above Rs.3000</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-item">
+                            <i class="bi bi-arrow-counterclockwise trust-icon"></i>
+                            <p class="trust-title">Easy Returns</p>
+                            <p class="trust-sub">30-day return policy</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-item">
+                            <i class="bi bi-shield-check trust-icon"></i>
+                            <p class="trust-title">100% Authentic</p>
+                            <p class="trust-sub">Genuine products</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="trust-item">
+                            <i class="bi bi-headset trust-icon"></i>
+                            <p class="trust-title">24/7 Support</p>
+                            <p class="trust-sub">Always here for you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== TRUST BADGES SECTION END ========== -->
+        <!-- ========== CATEGORIES SECTION START ========== -->
+        <section class="categories-section py-5" id="collections">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-tag">Browse</span>
+                    <h2 class="section-title">Shop by Category</h2>
+                    <p class="section-sub">Find the perfect pair for every occasion</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/4.jpg" alt="Men Sandals" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Men's Sandals</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/5.jpg" alt="Women sandals" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Women's Sandals</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/6.jpg" alt="Women Heels" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Women Heels</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/7.jpg" alt="Loafers" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Loafers</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/8.jpg" alt="Khussa" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Khussa</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <a href="#" class="category-card text-center d-block">
+                            <div class="cat-img-wrap">
+                                <img src="assets/images/9.webp" alt="Formal" class="cat-img" />
+                            </div>
+                            <p class="cat-name mt-3">Formal Khussa</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== CATEGORIES SECTION END ========== -->
+        <!-- ========== FEATURED PRODUCTS SECTION START ========== -->
+        <section class="products-section py-5 bg-light-custom" id="products">
+            <div class="container">
+
+                <div class="section-header d-flex align-items-center justify-content-between mb-5 flex-wrap gap-3">
+                    <div>
+                        <span class="section-tag">Trending Now</span>
+                        <h2 class="section-title mb-0">Featured Products</h2>
+                    </div>
+                    <!-- Filter Tabs -->
+                    <div class="filter-tabs d-flex gap-2 flex-wrap">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Men</button>
+                        <button class="filter-btn">Women</button>
+                        <button class="filter-btn">Kids</button>
+                        <button class="filter-btn">Sale</button>
+                    </div>
+                </div>
+
                 <div class="row g-4">
 
-                    <div class="col-md-6">
-                        <div class="info-card info-card--sand">
-                            <span class="info-card-eyebrow">Girls'  Bestseller</span>
-                            <h4 class="info-card-title">The Capri Slide</h4>
-                            <p class="info-card-text">
-                                Our most-loved everyday sandal. Smooth leather upper, cushioned footbed,
-                                available in 18 colours. Perfect from brunch to sunset.
-                            </p>
-                            <div class="d-flex align-items-center gap-3 mt-3">
-                                <a href="#" class="btn btn-dark btn-sm rounded-pill">Shop Now →</a>
-                                <span class="info-card-price">From $59</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="info-card info-card--white">
-                            <span class="info-card-eyebrow">Boys' Bestseller</span>
-                            <h4 class="info-card-title">The Trek Pro</h4>
-                            <p class="info-card-text">
-                                Built for the adventurer. Rugged rubber outsole, adjustable straps,
-                                and a contoured footbed that keeps you going all day.
-                            </p>
-                            <div class="d-flex align-items-center gap-3 mt-3">
-                                <a href="#" class="btn btn-outline-dark btn-sm rounded-pill">Shop Now</a>
-                                <span class="info-card-price">From $69</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-     
-        <section class="cta-banner py-5">
-            <div class="container text-center">
-                <h2 class="cta-heading">Is summer passing you by?</h2>
-                <p class="cta-sub mt-2">Step into it with Stylo.</p>
-                <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
-                    <a href="#" class="btn btn-certo-primary rounded-pill">Shop Girls' →</a>
-                    <a href="#" class="btn btn-certo-outline-white rounded-pill">Shop Boys' →</a>
-                </div>
-            </div>
-        </section>
-        <
-        <section class="blog-section py-5">
-            <div class="container">
-                <h2 class="blog-heading text-center mb-5">Latest from the Stylo Journal</h2>
-                <div class="row g-4">
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="blog-card h-100">
-                            <div class="blog-img blog-img--1">
-                                <span class="blog-tag">Style Guide</span>
-                              
-                                <div class="blog-img-sandal">
-                                    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" width="90">
-                                        <path d="M15 52 Q25 65 60 67 Q95 65 105 52 Q108 43 103 36 Q98 30 88 28 L32 28 Q22 30 17 36 Q12 43 15 52Z" fill="#C8A882" />
-                                        <path d="M55 28 Q58 20 60 17 Q62 20 65 28" fill="none" stroke="#8B6340" stroke-width="5" stroke-linecap="round" />
-                                        <path d="M32 33 Q35 24 43 20 Q51 17 57 19 Q59 22 60 17" fill="none" stroke="#8B6340" stroke-width="4" stroke-linecap="round" />
-                                        <path d="M88 33 Q85 24 77 20 Q69 17 63 19 Q61 22 60 17" fill="none" stroke="#8B6340" stroke-width="4" stroke-linecap="round" />
-                                    </svg>
+                    <!-- Product Card 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                           <img src="assets/images/10.jpg" alt="T-strap Sandal" class="product-img" />
+                                <span class="badge-new">New</span>
+                                <div class="product-actions">
+                       <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                       <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
                                 </div>
                             </div>
-                            <div class="blog-body">
-                                <h5 class="blog-title">5 Ways to Style Your Sandals This Summer</h5>
-                                <p class="blog-excerpt">
-                                    From floral midi dresses to tailored linen trousers —
-                                    discover how our sandals pair perfectly with every outfit in your wardrobe.
-                                </p>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Men</p>
+                                <h6 class="product-name">T-strap Sandal</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span>(128)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 2,499</span>
+                                    <span class="price-old">Rs. 3,299</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="blog-card h-100">
-                            <div class="blog-img blog-img--2">
-                                <span class="blog-tag">Care Tips</span>
-                                <div class="blog-img-icon">🧴</div>
+                    <!-- Product Card 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/12.webp" alt="Flop socks" class="product-img" />
+                                <span class="badge-sale">-30%</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
                             </div>
-                            <div class="blog-body">
-                                <h5 class="blog-title">How to Care for Your Leather Sandals</h5>
-                                <p class="blog-excerpt">
-                                    Leather sandals can last a lifetime with the right care.
-                                    Here's our step-by-step guide to cleaning, conditioning, and storing your favourites.
-                                </p>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Women</p>
+                                <h6 class="product-name">Flop socks</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    <span>(84)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 1,799</span>
+                                    <span class="price-old">Rs. 2,599</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="blog-card h-100">
-                            <div class="blog-img blog-img--3">
-                                <span class="blog-tag">Travel</span>
-                                <div class="blog-img-icon">✈️</div>
+                    <!-- Product Card 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/13.jpg" alt="Classic Brown Heels" class="product-img" />
+                                <span class="badge-new">New</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
                             </div>
-                            <div class="blog-body">
-                                <h5 class="blog-title">The Best Sandals to Pack for Every Trip</h5>
-                                <p class="blog-excerpt">
-                                    Beach holiday, city break, or mountain retreat — we've rounded
-                                    up the perfect Stylo sandals for every type of travel adventure.
-                                </p>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Sport</p>
+                                <h6 class="product-name">Classic Brown Heels</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <span>(256)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 3,999</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/14.jpg" alt="Brown Loafer" class="product-img" />
+                                <span class="badge-sale">-20%</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Men</p>
+                                <h6 class="product-name">Tan Brown Loafer</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span>(67)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 2,999</span>
+                                    <span class="price-old">Rs. 3,799</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/15.jpg" alt="Women Flip Flop" class="product-img" />
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Beach</p>
+                                <h6 class="product-name">Summer Flip Flop</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                                    <span>(42)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 799</span>
+                                    <span class="price-old">Rs. 1,199</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/16.jpg" alt="Wedge Sandals" class="product-img" />
+                                <span class="badge-new">Hot</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Women</p>
+                                <h6 class="product-name">Wedge Sandals</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <span>(199)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 4,299</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 7 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/17.jpg" alt="Casual Footwears" class="product-img" />
+                                <span class="badge-sale">-40%</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Sport</p>
+                                <h6 class="product-name">Casual Footwear</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span>(310)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 2,799</span>
+                                    <span class="price-old">Rs. 4,699</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 8 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="assets/images/18.jpg" alt="Toe post sandals" class="product-img" />
+                                <span class="badge-new">New</span>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                    <button class="action-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <p class="product-brand">StepStyle Kids</p>
+                                <h6 class="product-name">Toe Post Sandals</h6>
+                                <div class="product-rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    <span>(89)</span>
+                                </div>
+                                <div class="product-price d-flex align-items-center gap-2">
+                                    <span class="price-current">Rs. 1,499</span>
+                                    <span class="price-old">Rs. 1,999</span>
+                                </div>
+                                <button class="btn btn-add-cart w-100 mt-2">Add to Cart</button>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
+                <!-- View All Button -->
                 <div class="text-center mt-5">
-                    <a href="#" class="btn btn-certo-primary rounded-pill">View all articles →</a>
+                    <a href="#" class="btn btn-primary-custom px-5 py-3">View All Products</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== FEATURED PRODUCTS SECTION END ========== -->
+        <!-- ========== PROMO BANNER SECTION START ========== -->
+        <section class="promo-section py-5">
+            <div class="container">
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="promo-card position-relative overflow-hidden">
+                            <img src="assets/images/19.jpg" alt="Women Sale" class="promo-img w-100" />
+                            <div class="promo-overlay">
+                                <span class="promo-label">Women's Special</span>
+                                <h3 class="promo-title">Up to 50% OFF<br />on Women's Sandals</h3>
+                                <a href="#" class="btn btn-light-custom mt-3">Shop Women <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="promo-card position-relative overflow-hidden">
+                            <img src="assets/images/20.jpg" alt="men Sale" class="promo-img w-100" />
+                            <div class="promo-overlay">
+                                <span class="promo-label">men's Exclusive</span>
+                                <h3 class="promo-title">New Season<br />Arrivals Are Here</h3>
+                                <a href="#" class="btn btn-light-custom mt-3">Shop Men <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-    
+        <!-- ========== PROMO BANNER SECTION END ========== -->
+        <!-- ========== NEW ARRIVALS SECTION START ========== -->
+        <section class="arrivals-section py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-tag">Just Dropped</span>
+                    <h2 class="section-title">New Arrivals</h2>
+                    <p class="section-sub">The freshest styles added this week</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Arrival 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/21.jpg" alt="Arrival 1" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Women</p>
+                                <h6 class="arrival-name"> Slide Sandal</h6>
+                                <p class="arrival-price">Rs. 1,299</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/22.jpg" alt="Arrival 2" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Women</p>
+                                <h6 class="arrival-name">Boho Flat Sandal</h6>
+                                <p class="arrival-price">Rs. 1,599</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/23.jpg" alt="Arrival 3" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Formal</p>
+                                <h6 class="arrival-name">Oxford Derby </h6>
+                                <p class="arrival-price">Rs. 4,999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/24.jpg" alt="Arrival 4" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Kids</p>
+                                <h6 class="arrival-name">Velcro School Shoes</h6>
+                                <p class="arrival-price">Rs. 1,199</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 5 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/26.jpg" alt="Arrival 5" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Men</p>
+                                <h6 class="arrival-name">Strapy Slide Sandals</h6>
+                                <p class="arrival-price">Rs. 5,499</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 6 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/27.jpg" alt="Arrival 6" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Beach</p>
+                                <h6 class="arrival-name">Cork Sole Slide</h6>
+                                <p class="arrival-price">Rs. 899</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 7 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/28.jpg" alt="Arrival 7" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Women</p>
+                                <h6 class="arrival-name">Ankle Strap Heel</h6>
+                                <p class="arrival-price">Rs. 2,799</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrival 8 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="arrival-card d-flex gap-3 align-items-center">
+                            <div class="arrival-img-wrap">
+                                <img src="assets/images/29.jpg" alt="Arrival 8" class="arrival-img" />
+                            </div>
+                            <div class="arrival-info">
+                                <p class="arrival-brand">StepStyle Men</p>
+                                <h6 class="arrival-name">Casual Canvas Shoe</h6>
+                                <p class="arrival-price">Rs. 2,199</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========== NEW ARRIVALS SECTION END ========== -->
+        <!-- ========== FULL WIDTH BANNER SECTION START ========== -->
+        <section class="fullbanner-section position-relative overflow-hidden">
+            <img src="assets/images/30.jpg"
+                 alt="Sale Banner"
+                 class="fullbanner-img w-100" />
+            <div class="fullbanner-overlay text-center">
+                <span class="hero-tag">Limited Time Offer</span>
+                <h2 class="fullbanner-title">MEGA SUMMER SALE</h2>
+                <p class="fullbanner-sub">Up to 50% off on selected styles. Ends July 31.</p>
+                <a href="#products" class="btn btn-primary-custom btn-lg mt-3">Grab the Deal</a>
+            </div>
+        </section>
+        <!-- ========== FULL WIDTH BANNER SECTION END ========== -->
+        <!-- ========== TESTIMONIALS SECTION START ========== -->
+        <section class="testimonials-section py-5 bg-light-custom">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="section-tag">Reviews</span>
+                    <h2 class="section-title">What Our Customers Say</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Absolutely love my sandals! Super comfortable and stylish. The quality exceeded my expectations. Will definitely order again!"</p>
+                            <div class="testimonial-author d-flex align-items-center gap-3 mt-3">
+                                <img src="assets/images/31.jpg" alt="Sara Ahmed" class="testimonial-avatar" />
+                                <div>
+                                    <p class="author-name mb-0">Sara Ahmed</p>
+                                    <p class="author-loc mb-0">Lahore, PK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="testimonial-text">"Fast delivery and amazing packaging. The loafers I ordered fit perfectly. StepStyle is now my go-to shoe brand!"</p>
+                            <div class="testimonial-author d-flex align-items-center gap-3 mt-3">
+                                <img src="assets/images/32.jpg" alt="Ali Hassan" class="testimonial-avatar" />
+                                <div>
+                                    <p class="author-name mb-0">Ali Hassan</p>
+                                    <p class="author-loc mb-0">Karachi, PK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-text">"Got the kids' sneakers and my daughter hasn't taken them off since! Great quality at a very reasonable price. Highly recommend."</p>
+                            <div class="testimonial-author d-flex align-items-center gap-3 mt-3">
+                                <img src="assets/images/34.jpg" alt="Fatima Malik" class="testimonial-avatar" />
+                                <div>
+                                    <p class="author-name mb-0">Fatima Malik</p>
+                                    <p class="author-loc mb-0">Islamabad, PK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ========== TESTIMONIALS SECTION END ========== -->
+        <!-- ========== NEWSLETTER SECTION START ========== -->
+        <section class="newsletter-section py-5">
+            <div class="container">
+                <div class="newsletter-box text-center">
+                    <span class="section-tag">Stay Updated</span>
+                    <h2 class="newsletter-title">Subscribe &amp; Save 10%</h2>
+                    <p class="newsletter-sub">Get the latest arrivals, exclusive deals and style tips straight to your inbox.</p>
+                    <div class="newsletter-form d-flex justify-content-center flex-wrap gap-2 mt-4">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" />
+                        <button class="btn btn-primary-custom px-4">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== NEWSLETTER SECTION END ========== -->
 
     </main>
 
-    <footer class="site-footer">
+
+    <!-- ========== FOOTER START ========== -->
+    <footer class="site-footer pt-5 pb-3">
         <div class="container">
             <div class="row g-4">
 
-                <div class="col-lg-3 col-md-6">
-                    <p class="footer-tagline">Step. Shine. Stylo.</p>
-                    <div class="social-icons mt-3 mb-3 d-flex gap-3">
-                        <a href="#" class="social-icon" aria-label="Instagram">&#9825;</a>
-                        <a href="#" class="social-icon" aria-label="Pinterest">P</a>
-                        <a href="#" class="social-icon" aria-label="TikTok">T</a>
+                <!-- Brand Column -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer-brand mb-3">
+                        <span class="brand-name">StepStyle</span>
                     </div>
-                    <p class="footer-address">
-                        &copy; 2025 Stylo Footwear Ltd · 12 Cobbler Lane, London, EC2A 4PQ
-                    </p>
-                    <p class="footer-small">Made with ♥ for happy feet</p>
+                    <p class="footer-desc">Pakistan's leading online footwear destination. Walk with confidence, walk with style.</p>
+                    <div class="social-icons d-flex gap-3 mt-3">
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-brand-name">Shop</h5>
-                    <ul class="footer-links list-unstyled mt-3">
-                        <li><a href="#">Girls' </a></li>
-                        <li><a href="#">Boys'</a></li>
-                        <li><a href="#">Kids'</a></li>
-                        <li><a href="#">New Arrivals</a></li>
+                <!-- Quick Links -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Shop All</a></li>
                         <li><a href="#">Sale</a></li>
+                        <li><a href="#">New Arrivals</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-brand-name">Help</h5>
-                    <ul class="footer-links list-unstyled mt-3">
-                        <li><a href="#">Size Guide</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                <!-- Customer Care -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <h6 class="footer-heading">Customer Care</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-5 col-md-6">
-                    <div class="newsletter-box">
-                        <h5 class="newsletter-title">Join the Stylo community</h5>
-                        <p class="newsletter-text">
-                            Get early access to new collections, exclusive discounts, and style inspiration
-                            delivered straight to your inbox.
-                        </p>
-                        <div class="newsletter-form mt-3">
-                            <input type="email" class="newsletter-input" placeholder="Your email address" />
-                            <button class="btn btn-certo-primary newsletter-btn">Subscribe</button>
-                        </div>
+                <!-- Contact -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h6 class="footer-heading">Contact Us</h6>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt me-2"></i> 45-B Main Boulevard, Lahore, Pakistan</li>
+                        <li><i class="bi bi-telephone me-2"></i> +92-300-1234567</li>
+                        <li><i class="bi bi-envelope me-2"></i> support@stepstyle.pk</li>
+                        <li><i class="bi bi-clock me-2"></i> Mon – Sat: 9 AM – 8 PM</li>
+                    </ul>
+                    <!-- Payment Icons -->
+                    <div class="payment-icons d-flex gap-2 mt-3 flex-wrap">
+                        <span class="payment-badge"><i class="bi bi-credit-card"></i> Visa</span>
+                        <span class="payment-badge"><i class="bi bi-credit-card-2-front"></i> MC</span>
+                        <span class="payment-badge"><i class="bi bi-phone"></i> EasyPaisa</span>
+                        <span class="payment-badge"><i class="bi bi-bank"></i> Jazz Cash</span>
                     </div>
                 </div>
 
             </div>
 
-            <div class="footer-bottom mt-5 pt-3 border-top">
-                <p class="footer-small text-center">
-                    &copy; 2025 Stylo Footwear Ltd &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp;
-                    Terms of Service &nbsp;·&nbsp; Cookies &nbsp;·&nbsp; Accessibility
-                </p>
+            <hr class="footer-divider mt-4 mb-3" />
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <p class="mb-0 footer-copy">&copy; 2025 StepStyle. All rights reserved.</p>
+                <div class="footer-policies d-flex gap-3 flex-wrap">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
             </div>
+
         </div>
     </footer>
-
+    <!-- ========== FOOTER END ========== -->
+    <!-- Bootstrap 5 JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
