@@ -610,7 +610,7 @@ ul {
     color: var(--color-white);
 }
 
-/* Action Buttons on Hover */
+
 .product-actions {
     position: absolute;
     top: 12px;
@@ -650,7 +650,7 @@ ul {
         color: var(--color-white);
     }
 
-/* Product Info */
+
 .product-info {
     padding: 1rem;
 }
@@ -697,7 +697,7 @@ ul {
     text-decoration: line-through;
 }
 
-/* Add to Cart Button */
+
 .btn-add-cart {
     background-color: var(--color-secondary);
     color: var(--color-white);
