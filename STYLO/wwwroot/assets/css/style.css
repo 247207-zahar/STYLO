@@ -1243,7 +1243,6 @@ ul {
     }
 }
 
-/* ---- Large Desktop: 1200px+ ---- */
 @media (min-width: 1200px) {
     .hero-main {
         height: 620px;
